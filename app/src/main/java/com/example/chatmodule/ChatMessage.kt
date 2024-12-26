@@ -1,8 +1,8 @@
 package com.example.chatmodule
 
 data class ChatMessage(
-    val content: String,
-    val isFile: Boolean,
-    val isSent: Boolean
+    val text: String? = null,
+    val fileUri: String? = null,
+    val isSentByUser: Boolean = false
 )
 
